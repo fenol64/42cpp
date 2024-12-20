@@ -1,10 +1,10 @@
-NAME	=	mutant_stack
+NAME	=	btc
 
 COMPILE	=	c++
 
-FLAG	=	-g -Wall -Wextra -Werror -std=c++98
+FLAG	=	-g -Wall -Wextra -Werror #-std=c++98
 
-SRCS	=	main.cpp
+SRCS	=	main.cpp BitcoinExchange.cpp
 
 all: $(NAME)
 
@@ -20,4 +20,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all re fclean clean
-
